@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY ./* /app/
 
+RUN go mod tidy
 RUN go build -o /grpc-demo .
 
 FROM alpine

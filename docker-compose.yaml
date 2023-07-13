@@ -1,0 +1,13 @@
+services:
+  server-go:
+    build: ./go
+    ports:
+      - 8081:8081
+    
+  client-java:
+    build: ./java
+    platform: linux/amd64
+    depends_on:
+      - server-go
+    environment:
+      - SERVER_ADDR=server-go:8081

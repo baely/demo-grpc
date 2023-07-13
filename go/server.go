@@ -3,9 +3,11 @@ package main
 import (
 	"context"
 	"fmt"
-	pb "github.com/baely/grpc-demo/go/gen/protos"
-	"google.golang.org/grpc"
 	"net"
+
+	"google.golang.org/grpc"
+
+	pb "github.com/baely/demo-grpc/go/gen"
 )
 
 type HelloWorldServer struct {

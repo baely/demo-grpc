@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.2.0
 // - protoc             (unknown)
-// source: protos/helloworld.proto
+// source: helloworld.proto
 
 package protos
 
@@ -101,5 +101,5 @@ var HelloWorldService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "protos/helloworld.proto",
+	Metadata: "helloworld.proto",
 }
