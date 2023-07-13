@@ -4,7 +4,7 @@
 // - protoc             (unknown)
 // source: helloworld.proto
 
-package protos
+package gen
 
 import (
 	context "context"

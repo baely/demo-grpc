@@ -66,11 +66,6 @@ public final class Helloworld {
       return new HelloWorldRequest();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return org.example.gen.protos.Helloworld.internal_static_HelloWorldRequest_descriptor;
@@ -280,11 +275,13 @@ public final class Helloworld {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static org.example.gen.protos.Helloworld.HelloWorldRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static org.example.gen.protos.Helloworld.HelloWorldRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -769,11 +766,6 @@ public final class Helloworld {
       return new HelloWorldResponse();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return org.example.gen.protos.Helloworld.internal_static_HelloWorldResponse_descriptor;
@@ -983,11 +975,13 @@ public final class Helloworld {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static org.example.gen.protos.Helloworld.HelloWorldResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static org.example.gen.protos.Helloworld.HelloWorldResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1446,7 +1440,7 @@ public final class Helloworld {
       "J\n\021HelloWorldService\0225\n\nHelloWorld\022\022.Hel" +
       "loWorldRequest\032\023.HelloWorldResponseB;\n\026o" +
       "rg.example.gen.protosZ!github.com/baely/" +
-      "grpc-demo/protosb\006proto3"
+      "demo-grpc/go/genb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

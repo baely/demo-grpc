@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/baely/grpc-demo/protos";
+option go_package = "github.com/baely/demo-grpc/go/gen";
 option java_package = "org.example.gen.protos";
 
 service HelloWorldService {
