@@ -1,12 +1,7 @@
 package org.example;
 
 import io.grpc.Channel;
-import io.grpc.ManagedChannel;
-import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
-import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import org.example.gen.protos.HelloWorldServiceGrpc;
 import org.example.gen.protos.Helloworld.HelloWorldRequest;
@@ -33,6 +28,5 @@ public class HelloClient {
         } catch (StatusRuntimeException e) {
             System.out.println(e.getMessage());
         }
-
     }
 }

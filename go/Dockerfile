@@ -9,11 +9,10 @@ COPY ./cmd ./cmd
 COPY ./internal ./internal
 
 RUN go mod tidy
-RUN go build -o /grpc-demo ./cmd
+RUN CGO_ENABLED=0 GOOS=linux go build -o /grpc-demo ./cmd
 
 FROM alpine
-COPY --from=builder /grpc-demo /grpc-demo
 
-EXPOSE 8081
+COPY --from=builder /grpc-demo /grpc-demo
 
 CMD [ "/grpc-demo" ]
