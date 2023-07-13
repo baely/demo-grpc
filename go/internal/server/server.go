@@ -1,4 +1,4 @@
-package main
+package server
 
 import (
 	"context"
@@ -7,7 +7,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	pb "github.com/baely/demo-grpc/go/gen"
+	pb "github.com/baely/demo-grpc/go/internal/gen"
 )
 
 type HelloWorldServer struct {
