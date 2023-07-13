@@ -1,4 +1,4 @@
-module github.com/baely/demo-grpc/go
+module github.com/baely/demo-grpc
 
 go 1.20
 

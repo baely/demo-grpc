@@ -1,6 +1,8 @@
 services:
   server-go:
-    build: ./go
+    build:
+      context: .
+      dockerfile: ./go/Dockerfile
     ports:
       - 8081:8081
     
