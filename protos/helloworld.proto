@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "github.com/baely/grpc-demo/protos";
+option java_package = "org.example.gen.protos";
+
+service HelloWorldService {
+    rpc HelloWorld (HelloWorldRequest) returns (HelloWorldResponse);
+}
+
+message HelloWorldRequest {
+    string service = 1;
+    string name = 2;
+}
+
+message HelloWorldResponse {
+    string service = 1;
+    string message = 2;
+}
